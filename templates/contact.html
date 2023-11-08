@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <style>
+        body {
+            background: 0b0b0b;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted plays-inline class="background">
+        <source src="gray.mp4" type="video/mp4">
+    </video>
+
+    <div class="container2">
+        <a href="/" class="home-button"> < Home</a>
+        <main class="row">
+
+            <section class="col left">
+                <div class="contactTitle">
+                    <h2>Get in Touch</h2>
+                    <p>If you have suggestions, recommendations, tutorials, or any type of queries, you can send me a message.</p>
+                </div>
+
+                <div class="contactInfo">
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <span>Phone</span>
+                            <span>+63 929 6348 630</span>
+                        </div>
+                    </div>
+
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <span>Webmail</span>
+                            <span>rubenavargas@iskolarngbayan.pup.edu.ph</span>
+                        </div>
+                    </div>
+
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="details">
+                            <span>Location</span>
+                            <span>Cadena de amor, Bermuda, Brgy, San Luis, Antipolo City</span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/profile.php?id=100009842448915"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/_vargasruben/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/bennnnn10?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </section>
+            
+            <section class="col right">
+                <form class="messageForm" action="/submit_message" method="POST">
+                    <div class="inputGroup halfWidth">
+                        <label for="yourName">Your Name</label>
+                        <input type="text" id="yourName" name="yourName" required="required">
+                    </div>
+            
+                    <div class="inputGroup halfWidth">
+                        <label for="yourEmail">Email</label>
+                        <input type="email" id="yourEmail" name="yourEmail" required="required">
+                    </div>
+            
+                    <div class="inputGroup fullWidth">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required="required">
+                    </div>
+            
+                    <div class="inputGroup fullWidth">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </div>
+
+                    <input type="hidden" name="action" value="save_to_csv">
+                    
+                    <div class="inputGroup fullWidth">
+                        <button class="custom-button" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

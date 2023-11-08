@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Triangle</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <video autoplay loop muted plays-inline class="background">
+        <source src="waves.mp4" type="video/mp4">
+    </video>
+
+
+<div class="triangle">
+    <a href="/works" class="b-button"> < Back</a>
+    <h1>Calculate the Area of a Triangle</h1>
+
+    <form action="/triangle" method="post">
+        <div class="inputfloat1">
+            <label for="InputFloat1">Input your base: </label>
+            <input type="text" id="InputFloat1" name="InputFloat1">
+        </div>
+        <div class="inputfloat2">
+            <label for="InputFloat2">Input your height: </label>
+            <input type="text" id="InputFloat2" name="InputFloat2">
+        </div>
+        <div class="submit">
+            <input type="submit" value="Calculate the Area">
+        </div>
+    </form>
+    {% if area %}
+    <p> The area is {{ area }}</p>
+    {% endif %}
+</div>
+</body>
+</html>

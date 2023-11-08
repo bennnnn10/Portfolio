@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Circle</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <video autoplay loop muted plays-inline class="background">
+        <source src="waves.mp4" type="video/mp4">
+    </video>
+
+<div class="circle">
+    <a href="/works" class="b-button"> < Back</a>
+    <h1>Calculate the Area of a Circle</h1>
+
+    <form action="/circle" method="post">
+        <div class="inputfloat">
+            <label for="InputFloat">Input your radius</label>
+        </div>
+        <div class="type">
+            <input type="text" id="InputFloat" name="InputFloat">
+        </div>
+        <div class="submit">
+            <input type="Submit" value="Calculate the Area">
+        </div>
+    </form>
+
+    {% if area %}
+    <p> The area is {{ area }}</p>
+    {% endif %}
+</div>
+</body>
+</html>
